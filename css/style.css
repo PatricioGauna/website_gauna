@@ -1,0 +1,355 @@
+@import url("https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  background-color: #BDBDBD; }
+
+.contenedor {
+  max-width: 900px;
+  margin: auto; }
+
+.container {
+  max-width: 900px; }
+
+.navbar {
+  background: black;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  color: white;
+  border-bottom: solid #FFEB3B 3px;
+  padding-left: 20px; }
+  .navbar .navbar-brand {
+    font-family: "Eczar", serif;
+    font-weight: 800;
+    color: white;
+    font-size: 25px; }
+  .navbar .navbar-brand:hover {
+    color: #FFEB3B; }
+
+.navbar-inverse .navbar-toggle {
+  border-color: #FFEB3B;
+  background-color: black; }
+  .navbar-inverse .navbar-toggle:focus {
+    background: black; }
+  .navbar-inverse .navbar-toggle:hover {
+    background-color: #FFEB3B; }
+
+.nav > li:hover {
+  background: #0f0f0f; }
+
+.navbar-inverse .navbar-nav > li > a {
+  color: white;
+  font-family: "Ubuntu", sans-serif; }
+
+h4 {
+  font-family: "Ubuntu", sans-serif, sans-serif;
+  font-weight: 300; }
+
+header {
+  background-image: url("../img/header2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-color: #A8B7AB;*/
+  padding: 60px 0;
+  text-align: left; }
+  header img {
+    width: 100%;
+    height: 596px;
+    position: absolute; }
+  header h1 {
+    font-family: "Kreon", sans-serif;
+    font-size: 100px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    /*width: 60%;*/
+    line-height: 120%;
+    /*text-shadow: 2px 2px 0px black;*/
+    font-weight: 700; }
+    @media (max-width: 720px) {
+      header h1 {
+        font-size: 40px;
+        margin-left: 10px; } }
+  header h1, header h3 {
+    color: #FFEB3B;
+    text-transform: uppercase;
+    position: relative;
+    cursor: default; }
+  header h3 {
+    background: #080808;
+    font-family: "Ubuntu", sans-serif, sans-serif;
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    border-radius: 10px; }
+
+.separador {
+  background: #FFEB3B;
+  box-sizing: border-box;
+  height: 3px;
+  width: 300px; }
+
+.formacion {
+  background: #080808; }
+  .formacion .contenedor {
+    padding-top: 60px; }
+  .formacion h2 {
+    color: white;
+    padding: 10px 10px 0 0;
+    font-family: "Kreon", sans-serif;
+    font-size: 30px;
+    /*border: 1px $gris-oscuro solid;*/
+    margin-bottom: 10px;
+    font-weight: 700; }
+  .formacion p {
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    padding: 10px 30px 0 0;
+    width: 50%;
+    line-height: 150%; }
+  .formacion article {
+    width: 400px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    padding: 100px 20px;
+    padding-top: 80px;
+    margin: auto;
+    color: white; }
+    @media (max-width: 720px) {
+      .formacion article {
+        width: 40%;
+        margin: 0; } }
+  .formacion h3 {
+    font-family: "Kreon", sans-serif;
+    color: #FFEB3B;
+    margin: 20px 0 0 0;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center; }
+  .formacion h4 {
+    font-family: "Ubuntu", sans-serif;
+    margin: 5px 0;
+    font-weight: 300;
+    text-align: center; }
+  .formacion .boton {
+    font-family: "Ubuntu", sans-serif;
+    color: #FFEB3B;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #FFEB3B;
+    margin: 15px 0;
+    text-decoration: none; }
+
+.thumbnail {
+  background: black;
+  border-color: #FFEB3B;
+  margin: 30px 0;
+  padding-top: 20px; }
+  .thumbnail p {
+    width: 90%; }
+
+.btn-primary {
+  background: #FFEB3B;
+  color: black;
+  border-color: yellow; }
+
+.habilidades {
+  background: #FFEB3B;
+  	/*background-image: url("../img/habilidades.jpg");
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;*/ }
+  .habilidades .contenedor {
+    padding-top: 60px; }
+  .habilidades h3 {
+    background: #FFEB3B;
+    font-family: "Kreon", sans-serif;
+    color: #080808;
+    font-size: 30px;
+    text-align: right;
+    padding: 10px 0;
+    /*border: 1px $gris-oscuro solid;*/
+    margin-bottom: 10px;
+    font-weight: 700; }
+  .habilidades .separador {
+    margin: 0 0 auto 0; }
+  .habilidades ul {
+    width: 500px;
+    margin: auto;
+    padding: 50px 15px;
+    text-align: center;
+    line-height: 125%; }
+  .habilidades li {
+    background: #FFEB3B;
+    color: #455A64;
+    font-family: "Ubuntu", sans-serif, sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    margin: 0 15px;
+    cursor: default;
+    padding: 3px; }
+    @media (max-width: 720px) {
+      .habilidades li {
+        color: #455A64;
+        padding: 6px;
+        font-size: 30px; } }
+  .habilidades li:hover {
+    color: black;
+    transform: rotate(7deg);
+    transform: scale(3);
+    border: 1px solid #080808; }
+    @media (max-width: 720px) {
+      .habilidades li:hover {
+        transform: rotate(0);
+        transform: scale(0); } }
+
+.trabajos {
+  background: #080808; }
+  .trabajos .contenedor {
+    padding-top: 60px; }
+  .trabajos h3 {
+    color: white;
+    padding: 10px 0;
+    font-family: "Kreon", sans-serif;
+    font-size: 30px;
+    font-weight: 700; }
+  .trabajos .galerias {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 0; }
+  .trabajos article {
+    padding: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    border: 1px solid #FFEB3B;
+    margin-bottom: 30px;
+    border-radius: 14px; }
+  .trabajos h4 {
+    padding: 15px 0;
+    font-weight: 700;
+    width: 200px;
+    font-size: 19px;
+    color: #FFEB3B; }
+  .trabajos .gallery {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    box-sizing: border-box; }
+  .trabajos img {
+    width: 200px;
+    vertical-align: top; }
+  .trabajos a::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s; }
+  .trabajos a:hover:after {
+    opacity: 1; }
+  .trabajos p {
+    font-weight: 300;
+    width: 200px;
+    margin: 20px 0;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: left;
+    hyphens: auto; }
+
+footer {
+  background-color: #FFEB3B; }
+  footer .redes {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    color: #080808;
+    width: 100%;
+    font-family: "lato", sans-serif;
+    font-size: 25px;
+    font-weight: 300; }
+  footer li {
+    display: inline-block;
+    background-color: #CFD8DC;
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding-top: 5px;
+    box-sizing: border-box;
+    color: white;
+    transition: 0.5s;
+    font-size: 30px;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%; }
+  footer li:nth-child(1) {
+    background: #125688; }
+  footer li:nth-child(2) {
+    background: tomato; }
+  footer a {
+    text-decoration: none;
+    color: white; }
+  footer p {
+    display: inline-block;
+    font-size: 17px;
+    font-family: "Ubuntu", sans-serif, sans-serif; }
+  footer .fondo {
+    background: #080808;
+    width: 100%;
+    font-family: "Ubuntu", sans-serif, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    padding: 20px 0;
+    color: white; }
+
+/*# sourceMappingURL=style.css.map */

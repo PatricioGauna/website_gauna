@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Patricio Gauna diseño</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/colorbox.css">
+	<link href="https://fonts.googleapis.com/css?family=Eczar:600,800|Roboto+Mono:300,400,700,900|Ubuntu:300, 500|Kreon:700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="jquery/jquery.colorbox-min.js"></script>
+
+    <script type="text/javascript">
+    	$(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 1100, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
+    </script>
+    
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-inverse">
+  		<div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    		<div class="navbar-header">
+      			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+       				 <span class="sr-only">Toggle navigation</span>
+        			 <span class="icon-bar"></span>
+       				 <span class="icon-bar"></span>
+       				 <span class="icon-bar"></span>
+      			</button>
+      		<a class="navbar-brand" href="index.html">gauna</a>
+    		</div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#1">Formación</a></li>
+	        <li><a href="#2">Habilidades</a></li>
+	        <li><a href="#3">Portfolio</a></li>
+	        <li><a href="#4">Contacto</a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+	
+	<header>
+		<!--<img src="img/header.jpg">
+-->
+		<div class="contenedor">
+			
+			<h1>Gauna diseño y comunicación visual</h1>
+			<h3>Diseño editorial, de identidad y web.</h3>
+
+		</div>
+	
+	</header>
+
+
+	<section class="formacion" id="1">
+	
+		
+
+		<div class="contenedor">
+
+ 		<h2>Formación</h2>
+		<div class="separador"></div>
+		<div class="row">
+  			<div class="col-sm-4 col-md-4">
+    		<div class="thumbnail">
+     		 	<img src="img/unla_circulo.png">
+      		<div class="caption">
+       		 	<h3>Lic. en Diseño y Comunicación Visual</h3>
+        		<p>Universidad Nacional de Lanús</p>
+        		<p><a href="http://www.unla.edu.ar" target= "_blank" class="btn btn-primary" role="button">Visitar web</a>
+      		</div>
+    		</div>
+			</div>
+
+			<div class="col-sm-4 col-md-4">
+    		<div class="thumbnail">
+     		 	<img src="img/coderhouse_circulo.png">
+      		<div class="caption">
+       		 	<h3>Diseñador Web</h3>
+        		<p>Coderhouse</p>
+        		<p><a href="https://www.coderhouse.com" target= "_blank" class="btn btn-primary" role="button">Visitar web</a>
+      		</div>
+    		</div>
+			</div>
+	</div>
+			<!--
+			
+			<p>Soy diseñador visual formado universitariamente, principalmente con prácticas en diseño editorial y de identidad. Actualmente me estoy orientando hacia el diseño web. </p>
+			<article>
+
+				<img src="img/unla_circulo.png">
+				<h3>Lic. en Diseño y Comunicación Visual</h3>
+				<h4>Universidad Nacional de Lanús</h4>
+				<a class="boton" href="http://www.unla.com.ar" target="_blank">Visitar sitio web</a>
+
+			</article>
+
+			<article>
+
+				<img src="img/coderhouse_circulo.png">
+				<h3>Diseñador Web</h3>
+				<h4>Coderhouse</h4>
+				<a class="boton" href="http://www.coderhouse.com" target="_blank">Visitar sitio web</a>
+
+			</article>
+-->
+		</div>
+		
+	</section>
+
+	<section class="habilidades" id="2">
+		<div class="contenedor">
+			
+			<h3>Habilidades</h3>
+		
+			<ul>
+
+				<li>Photoshop</li>
+				<li>Illustrator</li>
+				<li>Indesign</li>
+				<li>HTML 5</li>
+				<li>CSS 3</li>
+				<li>SASS</li>
+				<li>LESS</li>
+				<li>BOOTSTRAP</li>
+				<li>Inglés</li>
+				
+			</ul>
+			
+		</div>
+
+	</section>
+
+
+	<section class="trabajos" id="3">
+	
+		<div class="contenedor">
+
+			<h3>Portfolio</h3>
+			<div class="separador"></div>
+			<div class="galerias">
+			<article>
+				<h4>ALFA equipment</h4>
+				
+				<a class="gallery" href="img/alfa.jpg"><img src="img/minalfa.jpg"/></a>
+				<p>Catálogo de fundas de butacas, a dos páginas para Alfa Equipment.</p>
+
+			</article>
+
+		
+
+			<article>
+				<h4>Logofolio</h4>
+				<a class="gallery" href="img/logos.jpg"><img src="img/minlogos.jpg"></a>
+				<p>Selección de logos, principalmente de
+				medios y profesionales jóvenes e independientes.</p>
+			</article>
+
+		
+
+			<article>
+				<h4>Ministerio de Turismo</h4>
+				<a class="gallery" href="img/ministerioturismo.jpg"><img src="img/minturismo.jpg"></a>
+				<p>Trabajo universitario basado en desarrollar una identidad para el Ministerio de Turismo.</p>
+			</article>
+
+			<article>
+				<h4>VL CD Artwork</h4>
+				<a class="gallery" href="img/videolatino.jpg"><img src="img/minvideo.jpg"></a>
+				<p>Artwork para el EP "Video Latino" de la banda de rock indie "La Brigada B"</p>
+			</article>
+
+			<article>
+				<h4>Iruya</h4>
+				<a class="gallery" href="img/iruya.jpg"><img src="img/miniruya.jpg"></a>
+				<p>Trabajo universitario basado en desarrollar identidad y piezas editoriales para el pueblo norteño de Iruya.</p>
+			</article>
+
+
+			<article>
+				<h4>Identidad Iruya</h4>
+				<img src="http://placehold.it/200x200">
+				<p></p>
+			</article>
+
+		</div>
+
+		</div>
+
+	</section>
+
+	<footer id="4">
+	<a name="contacto"></a>
+		<div class="contenedor">
+
+			<div class="redes">
+
+				<ul>
+					<li><a href="https://www.linkedin.com/in/patricio-gauna-92bb5a11a/" target="_blank"><span class="ion-social-linkedin"></span></a></li>
+					<li><span class="ion-ios-email"></li>
+				</ul>	
+				<p>Patriciogauna.pg@gmail.com</p>
+					</div>
+		
+		
+
+		</div>
+
+		<div class="fondo">Copyright @ Gauna Diseño 2017</div>
+
+	</footer>
+</div>
+
+
+		
+
+<script>jQuery('a.gallery').colorbox();</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="jquery/bootstrap.min.js"></script>
+
+
+</div>
+</body>
+</html>
