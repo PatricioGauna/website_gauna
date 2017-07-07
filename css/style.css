@@ -32,9 +32,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-body {
-  background-color: #BDBDBD; }
-
 .contenedor {
   max-width: 900px;
   margin: auto; }
@@ -73,6 +70,14 @@ body {
   color: white;
   font-family: "Ubuntu", sans-serif; }
 
+.ion-social-instagram {
+  color: #FFEB3B;
+  font-size: 20px; }
+
+.ion-social-linkedin {
+  color: #FFEB3B;
+  font-size: 20px; }
+
 h4 {
   font-family: "Ubuntu", sans-serif, sans-serif;
   font-weight: 300; }
@@ -96,13 +101,14 @@ header {
     margin-top: 100px;
     margin-bottom: 30px;
     /*width: 60%;*/
-    line-height: 120%;
+    line-height: 105%;
     /*text-shadow: 2px 2px 0px black;*/
     font-weight: 700; }
     @media (max-width: 720px) {
       header h1 {
         font-size: 40px;
-        margin-left: 10px; } }
+        margin-left: 10px;
+        margin-top: 60px; } }
   header h1, header h3 {
     color: #FFEB3B;
     text-transform: uppercase;
@@ -116,12 +122,19 @@ header {
     font-weight: 500;
     margin-bottom: 60px;
     border-radius: 10px; }
+  header .btn-warning {
+    color: black;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 800; }
 
 .separador {
   background: #FFEB3B;
   box-sizing: border-box;
   height: 3px;
-  width: 300px; }
+  width: 200px; }
+  @media (max-width: 720px) {
+    .separador {
+      margin-left: 15px; } }
 
 .formacion {
   background: #080808; }
@@ -135,6 +148,9 @@ header {
     /*border: 1px $gris-oscuro solid;*/
     margin-bottom: 10px;
     font-weight: 700; }
+    @media (max-width: 720px) {
+      .formacion h2 {
+        margin-left: 15px; } }
   .formacion p {
     color: white;
     font-family: "Ubuntu", sans-serif;
@@ -143,6 +159,9 @@ header {
     padding: 10px 30px 0 0;
     width: 50%;
     line-height: 150%; }
+    @media (max-width: 720px) {
+      .formacion p {
+        margin-left: 15px; } }
   .formacion article {
     width: 400px;
     display: inline-block;
@@ -182,6 +201,9 @@ header {
   border-color: #FFEB3B;
   margin: 30px 0;
   padding-top: 20px; }
+  @media (max-width: 720px) {
+    .thumbnail {
+      margin: 15px; } }
   .thumbnail p {
     width: 90%; }
 
@@ -189,6 +211,10 @@ header {
   background: #FFEB3B;
   color: black;
   border-color: yellow; }
+  .btn-primary:hover {
+    background: black;
+    color: #FFEB3B;
+    border-color: #FFEB3B; }
 
 .habilidades {
   background: #FFEB3B;
@@ -209,37 +235,93 @@ header {
     /*border: 1px $gris-oscuro solid;*/
     margin-bottom: 10px;
     font-weight: 700; }
+    @media (max-width: 720px) {
+      .habilidades h3 {
+        margin-right: 15px; } }
   .habilidades .separador {
     margin: 0 0 auto 0; }
-  .habilidades ul {
-    width: 500px;
+  .habilidades .areas {
+    font-family: "Kreon", sans-serif;
+    color: #080808;
+    font-size: 30px;
+    text-align: right;
+    padding: 10px 0;
+    margin-bottom: 10px; }
+    .habilidades .areas li {
+      font-size: 15px;
+      margin: 10px 10px; }
+      .habilidades .areas li:first-child:before {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: tomato;
+        box-sizing: border-box;
+        margin-right: 5px; }
+      .habilidades .areas li:nth-child(2):before {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: black;
+        box-sizing: border-box;
+        margin-right: 5px; }
+      .habilidades .areas li:last-child:before {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: orange;
+        box-sizing: border-box;
+        margin-right: 5px; }
+  .habilidades .especialidades {
+    width: 60%;
     margin: auto;
     padding: 50px 15px;
     text-align: center;
     line-height: 125%; }
-  .habilidades li {
-    background: #FFEB3B;
-    color: #455A64;
-    font-family: "Ubuntu", sans-serif, sans-serif;
-    font-weight: 700;
-    display: inline-block;
-    margin: 0 15px;
-    cursor: default;
-    padding: 3px; }
-    @media (max-width: 720px) {
-      .habilidades li {
-        color: #455A64;
-        padding: 6px;
-        font-size: 30px; } }
-  .habilidades li:hover {
-    color: black;
-    transform: rotate(7deg);
-    transform: scale(3);
-    border: 1px solid #080808; }
-    @media (max-width: 720px) {
-      .habilidades li:hover {
-        transform: rotate(0);
-        transform: scale(0); } }
+    .habilidades .especialidades li {
+      background: #FFEB3B;
+      color: #080808;
+      font-family: "Ubuntu", sans-serif, sans-serif;
+      font-weight: 700;
+      display: inline-block;
+      margin: 5px 15px;
+      cursor: default;
+      padding: 7px;
+      border: 2pt solid;
+      -o-border-radius: 14px;
+      -ms-border-radius: 14px;
+      -webkit-border-radius: 14px;
+      -moz-border-radius: 14px;
+      border-radius: 14px; }
+      @media (max-width: 720px) {
+        .habilidades .especialidades li {
+          color: black;
+          padding: 6px;
+          font-size: 20px; } }
+    .habilidades .especialidades li:hover {
+      color: black;
+      transform: rotate(7deg);
+      transform: scale(3);
+      border: 1px solid #080808;
+      -o-border-radius: 0;
+      -ms-border-radius: 0;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0; }
+      @media (max-width: 720px) {
+        .habilidades .especialidades li:hover {
+          transform: rotate(0);
+          transform: scale(0); } }
+      .habilidades .especialidades li:hover .tomato {
+        color: tomato; }
+    .habilidades .especialidades .tomato {
+      border-color: tomato; }
+    .habilidades .especialidades .black {
+      border-color: black; }
+    .habilidades .especialidades .orange {
+      border-color: orange; }
 
 .trabajos {
   background: #080808; }
@@ -251,6 +333,9 @@ header {
     font-family: "Kreon", sans-serif;
     font-size: 30px;
     font-weight: 700; }
+    @media (max-width: 720px) {
+      .trabajos h3 {
+        margin-left: 15px; } }
   .trabajos .galerias {
     display: flex;
     flex-direction: row;
@@ -266,6 +351,9 @@ header {
     border: 1px solid #FFEB3B;
     margin-bottom: 30px;
     border-radius: 14px; }
+    @media (max-width: 720px) {
+      .trabajos article {
+        margin: 15px auto; } }
   .trabajos h4 {
     padding: 15px 0;
     font-weight: 700;
@@ -302,6 +390,39 @@ header {
     text-align: left;
     hyphens: auto; }
 
+.contacto {
+  background: #FFEB3B;
+  font-family: "Ubuntu", sans-serif;
+  padding: 60px 15px; }
+  .contacto h3 {
+    background: #FFEB3B;
+    font-family: "Kreon", sans-serif;
+    color: #080808;
+    font-size: 30px;
+    text-align: right;
+    padding: 10px 0;
+    /*border: 1px $gris-oscuro solid;*/
+    margin-bottom: 10px;
+    font-weight: 700; }
+    @media (max-width: 720px) {
+      .contacto h3 {
+        margin-right: 15px; } }
+  .contacto label {
+    margin: 15px 0; }
+  .contacto .texto {
+    text-align: center;
+    font-weight: 800;
+    padding: 120px 40px; }
+  .contacto button {
+    margin-top: 15px; }
+  .contacto .btn-default {
+    background: black;
+    color: #FFEB3B;
+    border-color: #0f0f0f; }
+  .contacto .btn-default:hover {
+    background: #FFEB3B;
+    color: black; }
+
 footer {
   background-color: #FFEB3B; }
   footer .redes {
@@ -334,6 +455,9 @@ footer {
     border-radius: 50%; }
   footer li:nth-child(1) {
     background: #125688; }
+    footer li:nth-child(1) .ion-social-linkedin {
+      color: white;
+      font-size: 30px; }
   footer li:nth-child(2) {
     background: tomato; }
   footer a {

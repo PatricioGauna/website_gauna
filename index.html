@@ -6,9 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Patricio Gauna diseño</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/colorbox.css">
-	<link href="https://fonts.googleapis.com/css?family=Eczar:600,800|Roboto+Mono:300,400,700,900|Ubuntu:300, 500|Kreon:700" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Eczar:600,800|Roboto+Mono:300,400,700,900|Ubuntu:300, 500,800|Kreon:700" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="jquery/jquery.colorbox-min.js"></script>
 
@@ -54,7 +54,9 @@
 	        <li><a href="#1">Formación</a></li>
 	        <li><a href="#2">Habilidades</a></li>
 	        <li><a href="#3">Portfolio</a></li>
-	        <li><a href="#4">Contacto</a></li>
+	        <li class="hidden-xs"><a href="#4">Contacto</a></li>
+	        <li><a href="https://instagram.com/gaunapatricio" target="_blank"><span class="ion-social-instagram"></span></a></li>
+	        <li><a href="https://www.linkedin.com/in/patricio-gauna-92bb5a11a/" target="_blank"><span class="ion-social-linkedin"></span></a></li>
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
@@ -68,6 +70,7 @@
 			
 			<h1>Gauna diseño y comunicación visual</h1>
 			<h3>Diseño editorial, de identidad y web.</h3>
+			<a href="#1"><button type="button" class="btn btn-warning hidden-xs">¡Vení a conocerme!</button></a>
 
 		</div>
 	
@@ -81,7 +84,9 @@
 		<div class="contenedor">
 
  		<h2>Formación</h2>
+
 		<div class="separador"></div>
+		<p>Soy un diseñador formado principalmente en editorial y branding. Actualmente estoy comenzando el camino para convertirme en desarrollador web Front-End.</p>
 		<div class="row">
   			<div class="col-sm-4 col-md-4">
     		<div class="thumbnail">
@@ -134,18 +139,23 @@
 		<div class="contenedor">
 			
 			<h3>Habilidades</h3>
+			<ul class="areas">
+				<li>Diseño gráfico</li>
+				<li>Desarrollo web</li>
+				<li>Idiomas</li>
+			</ul>
 		
-			<ul>
+			<ul class="especialidades">
 
-				<li>Photoshop</li>
-				<li>Illustrator</li>
-				<li>Indesign</li>
-				<li>HTML 5</li>
-				<li>CSS 3</li>
-				<li>SASS</li>
-				<li>LESS</li>
-				<li>BOOTSTRAP</li>
-				<li>Inglés</li>
+				<li class="tomato">Photoshop</li>
+				<li class="tomato">Illustrator</li>
+				<li class="tomato">Indesign</li>
+				<li class="black">HTML 5</li>
+				<li class="black">CSS 3</li>
+				<li class="black">SASS</li>
+				<li class="black">LESS</li>
+				<li class="black">BOOTSTRAP</li>
+				<li class="orange">Inglés</li>
 				
 			</ul>
 			
@@ -180,7 +190,7 @@
 
 		
 
-			<article>
+			<article >
 				<h4>Ministerio de Turismo</h4>
 				<a class="gallery" href="img/ministerioturismo.jpg"><img src="img/minturismo.jpg"></a>
 				<p>Trabajo universitario basado en desarrollar una identidad para el Ministerio de Turismo.</p>
@@ -199,10 +209,10 @@
 			</article>
 
 
-			<article>
-				<h4>Identidad Iruya</h4>
-				<img src="http://placehold.it/200x200">
-				<p></p>
+			<article class="hidden-xs">
+				<h4>Tadanori Yooko</h4>
+				<a class="gallery" href="img/tada.jpg"><img src="img/mintada.jpg"></a>
+				<p>Artbook que representa el estilo POP del diseñador japonés.</p>
 			</article>
 
 		</div>
@@ -210,8 +220,50 @@
 		</div>
 
 	</section>
+	<section class="contacto hidden-xs" id="4" >
+		<div class="contenedor">
+		<h3>Contacto</h3>
+		<div class="row">
+			<div class="col-sm-6 col-md-6 texto" >
+			¡Para consultas, dudas y presupuestos!
+			Será respondido cuanto antes
+			</div>
+			<div class="col-sm-6 col-md-6">
 
-	<footer id="4">
+			<form action="enviar.php" method="post">
+
+			<input type="hidden" name="subject" value="Contacto desde el sitio web">
+
+			<input type="hidden" name="recipient" value="patriciogauna.pg@gmail.com">
+
+			<input type="hidden" name="redirect" value="index.html">
+
+			
+
+  			<div class="form-group">
+			    <label for="exampleInputName2">Nombre</label>
+			    <input type="text" class="form-control" id="exampleInputName2" placeholder="Tu nombre!">
+			 </div>
+
+			 <div class="form-group">
+   				 <label for="exampleInputEmail1">Dirección de E-mail</label>
+   				 <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Tu e-mail!">
+  			</div>
+
+			 <textarea type="text" class="form-control" rows="3"></textarea>
+  
+  			<button type="submit" class="btn btn-default" value="submit">Submit</button>
+
+  			
+
+			</form>
+		</div>
+		</div>
+		</div>
+	</section>
+
+
+	<footer>
 	<a name="contacto"></a>
 		<div class="contenedor">
 
