@@ -168,19 +168,8 @@ header{
 		}
 
 	}
-	article{
-	@media (max-width: 720px){
-			width: 40%;
-			margin: 0;
-		}
-	width: 400px;
-	display: inline-block;
-	text-align: center;
-	position: relative;
-	padding: 100px 20px;
-	padding-top: 80px;
-	margin: auto;
-	color: white;
+	.row{
+		width: 100%;
 	}
 	h3{
 	font-family: $texto2;
@@ -213,14 +202,13 @@ header{
 	border-color: $amarillo;
 	margin: 30px 0;
 	padding-top: 20px;
+	p{
+	 width: 100%;
+	}
 	@media (max-width: 720px){
 			margin: 15px;
 		}
-	p{
-	 width: 90%;
-	}
 }
-
 .btn-primary{
 	background: $amarillo;
 	color: black;
@@ -300,9 +288,9 @@ header{
 
 	}
 	.especialidades{
-	width: 60%;
+	width: 100%;
 	margin: auto;
-	padding: 50px 15px;
+	padding: 15px 15px 50px 15px;
 	text-align: center;
 	line-height: 125%;
 	li{
@@ -315,11 +303,11 @@ header{
 	color: $negro;
 	font-family: $texto, sans-serif;
 	font-weight: 700;
-	display: inline-block;
-	margin: 5px 15px;
-	cursor: default;
-	padding: 7px;
-	border: 2pt solid;
+    display: inline-block;
+    margin: 5px 15px;
+    cursor: default;
+    padding: 7px;
+    border: 2pt solid;
 	@include redondeado (14px);
 	}
 	li:hover {
@@ -499,6 +487,9 @@ footer{
 	transition: 0.5s;
 	font-size:30px;
 	@include redondeado (50%);
+	@media (max-width: 480px){
+			margin: 0;
+		}
 	}
 	li:nth-child(1) {
 	background: #125688;
@@ -518,6 +509,11 @@ footer{
 	display: inline-block;
 	font-size: 17px;
 	font-family: $texto, sans-serif;
+	font-weight: 600;
+	@media (max-width: 480px){
+			font-size: 14px;
+			margin-left: 5px;
+		}
 	}
 	.fondo{
 	background: $negro;

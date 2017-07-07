@@ -162,19 +162,8 @@ header {
     @media (max-width: 720px) {
       .formacion p {
         margin-left: 15px; } }
-  .formacion article {
-    width: 400px;
-    display: inline-block;
-    text-align: center;
-    position: relative;
-    padding: 100px 20px;
-    padding-top: 80px;
-    margin: auto;
-    color: white; }
-    @media (max-width: 720px) {
-      .formacion article {
-        width: 40%;
-        margin: 0; } }
+  .formacion .row {
+    width: 100%; }
   .formacion h3 {
     font-family: "Kreon", sans-serif;
     color: #FFEB3B;
@@ -201,11 +190,11 @@ header {
   border-color: #FFEB3B;
   margin: 30px 0;
   padding-top: 20px; }
+  .thumbnail p {
+    width: 100%; }
   @media (max-width: 720px) {
     .thumbnail {
       margin: 15px; } }
-  .thumbnail p {
-    width: 90%; }
 
 .btn-primary {
   background: #FFEB3B;
@@ -275,9 +264,9 @@ header {
         box-sizing: border-box;
         margin-right: 5px; }
   .habilidades .especialidades {
-    width: 60%;
+    width: 100%;
     margin: auto;
-    padding: 50px 15px;
+    padding: 15px 15px 50px 15px;
     text-align: center;
     line-height: 125%; }
     .habilidades .especialidades li {
@@ -453,6 +442,9 @@ footer {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%; }
+    @media (max-width: 480px) {
+      footer li {
+        margin: 0; } }
   footer li:nth-child(1) {
     background: #125688; }
     footer li:nth-child(1) .ion-social-linkedin {
@@ -466,7 +458,12 @@ footer {
   footer p {
     display: inline-block;
     font-size: 17px;
-    font-family: "Ubuntu", sans-serif, sans-serif; }
+    font-family: "Ubuntu", sans-serif, sans-serif;
+    font-weight: 600; }
+    @media (max-width: 480px) {
+      footer p {
+        font-size: 14px;
+        margin-left: 5px; } }
   footer .fondo {
     background: #080808;
     width: 100%;
