@@ -60,6 +60,7 @@
 .navbar-inverse .navbar-nav>li>a {
     color: white;
     font-family: $texto;
+    font-weight: 400;
     }
 	
 .ion-social-instagram{
@@ -83,7 +84,6 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-	/*background-color: #A8B7AB;*/
 	padding: 60px 0;
 	text-align: left;
 	.fondo{
@@ -115,9 +115,7 @@ header{
 	font-family: $texto2;
 	font-size: 100px;
 	margin-bottom: 30px;
-	/*width: 60%;*/
 	line-height: 105%;
-	/*text-shadow: 2px 2px 0px black;*/
 	font-weight: 700;
 	}
 	h1, h3{
@@ -169,7 +167,6 @@ header{
 	padding: 10px 10px 0 0;
 	font-family: $texto2;
 	font-size: 30px;
-	/*border: 1px $gris-oscuro solid;*/
     margin-bottom: 10px;
     font-weight: 700;
     @media (max-width: 720px){
@@ -244,11 +241,6 @@ header{
 
 .habilidades{
 	background: $amarillo;
-	/*background-image: url("../img/habilidades.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;*/
 	.contenedor{
 	padding-top: 60px;
 	}
@@ -270,6 +262,10 @@ header{
 	}
 	.row{
     	width: 100%;
+    	margin-right: 0px;
+    .col-md-3{
+    	padding-right: 0px;
+    }
 	.areas{
 		font-family: $texto2;
 		color: $negro;
@@ -450,7 +446,6 @@ header{
 	font-size: 30px;
 	text-align: right;
 	padding: 10px 0;
-	/*border: 1px $gris-oscuro solid;*/
     margin-bottom: 10px;
     font-weight: 700;
     @media (max-width: 720px){

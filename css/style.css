@@ -68,7 +68,8 @@ table {
 
 .navbar-inverse .navbar-nav > li > a {
   color: white;
-  font-family: "Ubuntu", sans-serif; }
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400; }
 
 .ion-social-instagram {
   color: #FFEB3B;
@@ -88,7 +89,6 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /*background-color: #A8B7AB;*/
   padding: 60px 0;
   text-align: left; }
   header .fondo {
@@ -114,9 +114,7 @@ header {
     font-family: "Kreon", sans-serif;
     font-size: 100px;
     margin-bottom: 30px;
-    /*width: 60%;*/
     line-height: 105%;
-    /*text-shadow: 2px 2px 0px black;*/
     font-weight: 700; }
     @media (max-width: 720px) {
       header h1 {
@@ -166,7 +164,6 @@ header {
     padding: 10px 10px 0 0;
     font-family: "Kreon", sans-serif;
     font-size: 30px;
-    /*border: 1px $gris-oscuro solid;*/
     margin-bottom: 10px;
     font-weight: 700; }
     @media (max-width: 720px) {
@@ -228,12 +225,7 @@ header {
     border-color: #FFEB3B; }
 
 .habilidades {
-  background: #FFEB3B;
-  	/*background-image: url("../img/habilidades.jpg");
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;*/ }
+  background: #FFEB3B; }
   .habilidades .contenedor {
     padding-top: 60px; }
   .habilidades h3 {
@@ -251,7 +243,10 @@ header {
   .habilidades .separador {
     margin: 0 0 auto 0; }
   .habilidades .row {
-    width: 100%; }
+    width: 100%;
+    margin-right: 0px; }
+    .habilidades .row .col-md-3 {
+      padding-right: 0px; }
     .habilidades .row .areas {
       font-family: "Kreon", sans-serif;
       color: #080808;
@@ -413,7 +408,6 @@ header {
     font-size: 30px;
     text-align: right;
     padding: 10px 0;
-    /*border: 1px $gris-oscuro solid;*/
     margin-bottom: 10px;
     font-weight: 700; }
     @media (max-width: 720px) {
