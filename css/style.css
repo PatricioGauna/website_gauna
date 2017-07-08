@@ -91,6 +91,21 @@ header {
   /*background-color: #A8B7AB;*/
   padding: 60px 0;
   text-align: left; }
+  header .fondo {
+    background: rgba(8, 8, 8, 0.3);
+    padding: 20px;
+    -o-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    border-radius: 14px;
+    margin-top: 100px; }
+  @media (max-width: 720px) {
+    header .fondo {
+      font-size: 30px;
+      margin-left: 10px;
+      margin-top: 20px;
+      margin-right: 10px; } }
   header img {
     width: 100%;
     height: 596px;
@@ -98,7 +113,6 @@ header {
   header h1 {
     font-family: "Kreon", sans-serif;
     font-size: 100px;
-    margin-top: 100px;
     margin-bottom: 30px;
     /*width: 60%;*/
     line-height: 105%;
@@ -108,7 +122,7 @@ header {
       header h1 {
         font-size: 40px;
         margin-left: 10px;
-        margin-top: 60px; } }
+        width: 80%; } }
   header h1, header h3 {
     color: #FFEB3B;
     text-transform: uppercase;
@@ -120,10 +134,17 @@ header {
     display: inline-block;
     padding: 10px 20px;
     font-weight: 500;
-    margin-bottom: 60px;
     border-radius: 10px; }
+    @media (max-width: 720px) {
+      header h3 {
+        font-size: 14px;
+        margin-left: 10px;
+        width: 80%;
+        line-height: 125%; } }
   header .btn-warning {
     color: black;
+    background: #FFEB3B;
+    border-color: #d4be00;
     font-family: "Ubuntu", sans-serif;
     font-weight: 800; }
 
@@ -161,7 +182,8 @@ header {
     line-height: 150%; }
     @media (max-width: 720px) {
       .formacion p {
-        margin-left: 15px; } }
+        margin-left: 15px;
+        width: 80%; } }
   .formacion .row {
     width: 100%; }
   .formacion h3 {
@@ -221,7 +243,6 @@ header {
     font-size: 30px;
     text-align: right;
     padding: 10px 0;
-    /*border: 1px $gris-oscuro solid;*/
     margin-bottom: 10px;
     font-weight: 700; }
     @media (max-width: 720px) {
@@ -229,88 +250,90 @@ header {
         margin-right: 15px; } }
   .habilidades .separador {
     margin: 0 0 auto 0; }
-  .habilidades .areas {
-    font-family: "Kreon", sans-serif;
-    color: #080808;
-    font-size: 30px;
-    text-align: right;
-    padding: 10px 0;
-    margin-bottom: 10px; }
-    .habilidades .areas li {
-      font-size: 15px;
-      margin: 10px 10px; }
-      .habilidades .areas li:first-child:before {
-        content: "";
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        background: tomato;
-        box-sizing: border-box;
-        margin-right: 5px; }
-      .habilidades .areas li:nth-child(2):before {
-        content: "";
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        background: black;
-        box-sizing: border-box;
-        margin-right: 5px; }
-      .habilidades .areas li:last-child:before {
-        content: "";
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        background: orange;
-        box-sizing: border-box;
-        margin-right: 5px; }
-  .habilidades .especialidades {
-    width: 100%;
-    margin: auto;
-    padding: 15px 15px 50px 15px;
-    text-align: center;
-    line-height: 125%; }
-    .habilidades .especialidades li {
-      background: #FFEB3B;
+  .habilidades .row {
+    width: 100%; }
+    .habilidades .row .areas {
+      font-family: "Kreon", sans-serif;
       color: #080808;
-      font-family: "Ubuntu", sans-serif, sans-serif;
-      font-weight: 700;
-      display: inline-block;
-      margin: 5px 15px;
-      cursor: default;
-      padding: 7px;
-      border: 2pt solid;
-      -o-border-radius: 14px;
-      -ms-border-radius: 14px;
-      -webkit-border-radius: 14px;
-      -moz-border-radius: 14px;
-      border-radius: 14px; }
-      @media (max-width: 720px) {
-        .habilidades .especialidades li {
-          color: black;
-          padding: 6px;
-          font-size: 20px; } }
-    .habilidades .especialidades li:hover {
-      color: black;
-      transform: rotate(7deg);
-      transform: scale(3);
-      border: 1px solid #080808;
-      -o-border-radius: 0;
-      -ms-border-radius: 0;
-      -webkit-border-radius: 0;
-      -moz-border-radius: 0;
-      border-radius: 0; }
-      @media (max-width: 720px) {
-        .habilidades .especialidades li:hover {
-          transform: rotate(0);
-          transform: scale(0); } }
-      .habilidades .especialidades li:hover .tomato {
-        color: tomato; }
-    .habilidades .especialidades .tomato {
-      border-color: tomato; }
-    .habilidades .especialidades .black {
-      border-color: black; }
-    .habilidades .especialidades .orange {
-      border-color: orange; }
+      font-size: 30px;
+      text-align: right;
+      padding: 10px 0;
+      margin-bottom: 10px; }
+      .habilidades .row .areas li {
+        font-size: 15px;
+        margin: 10px 10px; }
+        .habilidades .row .areas li:first-child:before {
+          content: "";
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          background: tomato;
+          box-sizing: border-box;
+          margin-right: 5px; }
+        .habilidades .row .areas li:nth-child(2):before {
+          content: "";
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          background: black;
+          box-sizing: border-box;
+          margin-right: 5px; }
+        .habilidades .row .areas li:last-child:before {
+          content: "";
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          background: orange;
+          box-sizing: border-box;
+          margin-right: 5px; }
+    .habilidades .row .especialidades {
+      width: 100%;
+      margin: auto;
+      padding: 15px 15px 50px 15px;
+      text-align: center;
+      line-height: 125%; }
+      .habilidades .row .especialidades li {
+        background: #FFEB3B;
+        color: #080808;
+        font-family: "Ubuntu", sans-serif, sans-serif;
+        font-weight: 700;
+        display: inline-block;
+        margin: 5px 15px;
+        cursor: default;
+        padding: 7px;
+        border: 2pt solid;
+        -o-border-radius: 14px;
+        -ms-border-radius: 14px;
+        -webkit-border-radius: 14px;
+        -moz-border-radius: 14px;
+        border-radius: 14px; }
+        @media (max-width: 720px) {
+          .habilidades .row .especialidades li {
+            color: black;
+            padding: 6px;
+            font-size: 20px; } }
+      .habilidades .row .especialidades li:hover {
+        color: black;
+        transform: rotate(7deg);
+        transform: scale(3);
+        border: 1px solid #080808;
+        -o-border-radius: 0;
+        -ms-border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0; }
+        @media (max-width: 720px) {
+          .habilidades .row .especialidades li:hover {
+            transform: rotate(0);
+            transform: scale(0); } }
+        .habilidades .row .especialidades li:hover .tomato {
+          color: tomato; }
+      .habilidades .row .especialidades .tomato {
+        border-color: tomato; }
+      .habilidades .row .especialidades .black {
+        border-color: black; }
+      .habilidades .row .especialidades .orange {
+        border-color: orange; }
 
 .trabajos {
   background: #080808; }
